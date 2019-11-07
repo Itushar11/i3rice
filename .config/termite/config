@@ -1,0 +1,72 @@
+## Termite Styling Program
+## Author : Aditya Shakya
+
+[options]
+
+allow_bold = true
+audible_bell = true
+browser = xdg-open
+clickable_url = true
+cursor_blink = off
+cursor_shape = ibeam
+dynamic_title = true
+filter_unmatched_urls = true
+#fullscreen = true
+font = DejaVuSansMono Nerd Font 9.9
+geometry = 480x280
+icon_name = terminal
+modify_other_keys = false
+mouse_autohide = false
+scrollbar = off
+scroll_on_output = false
+scroll_on_keystroke = true
+scrollback_lines = 15000
+size_hints = false
+search_wrap = true
+urgent_on_bell = true
+highlight = #30343e
+
+[colors]
+
+# Challenger Deep Theme
+# https://challenger-deep-theme.github.io/
+
+foreground=   #cbe3e7
+background=   #1e1c31
+cursor=       #0F9DBA
+selection_background=  #fbfcfc
+
+# background transparency (requires a compositor)
+background = rgba(29, 35, 48, 0.8)
+
+# black
+color8=       #100e23
+color0=       #565575
+
+# red
+color9=       #ff5458
+color1=       #ff8080
+
+# green
+color2=       #95ffa4
+color10=      #62d196
+
+# yellow
+color3=       #ffe9aa
+color11=      #ffb378
+
+# blue
+color4=       #91ddff
+color12=      #65b2ff
+
+# magenta
+color5=       #c991e1
+color13=      #906cff
+
+# cyan
+color6=       #aaffe4
+color14=      #63f2f1
+
+# white
+color7=       #cbe3e7
+color15=      #a6b3cc
