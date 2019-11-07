@@ -1,0 +1,530 @@
+!  ____ _____
+! |  _ \_   _|  Derek Taylor (DistroTube)
+! | | | || |    http://www.youtube.com/c/DistroTube
+! | |_| || |    http://www.gitlab.com/dwt1/
+! |____/ |_|
+
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: true
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcdfilter
+
+XTerm*renderFont: true
+XTerm*faceName: xft: DejaVuSansMono Nerd Font
+XTerm*faceSize: 9.9
+XTerm*utf8: 2
+XTerm*locale: true
+
+XTerm.vt100.translations: #override \n\
+  Ctrl <Key> j: smaller-vt-font() \n\
+  Ctrl <Key> k: larger-vt-font()
+
+  XTerm.vt100.translations: #override \n\
+  Ctrl <Key> j: smaller-vt-font() \n\
+  Ctrl <Key> k: larger-vt-font()
+
+
+! Every shell is a login shell by default (for inclusion of all necessary environment variables)
+XTerm*loginshell: true
+
+! I like a LOT of scrollback...
+XTerm*savelines: 16384
+
+! double-click to select whole URLs :D
+XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+UXTerm*renderFont: true
+UXTerm*faceName: xft: RobotoMono Nerd Font
+UXTerm*faceSize: 9.9
+UXTerm*utf8: 2
+UXTerm*locale: true
+
+UXTerm.vt100.translations: #override \n\
+  Ctrl <Key> j: smaller-vt-font() \n\
+  Ctrl <Key> k: larger-vt-font()
+
+  UXTerm.vt100.translations: #override \n\
+  Ctrl <Key> j: smaller-vt-font() \n\
+  Ctrl <Key> k: larger-vt-font()
+
+
+! Every shell is a login shell by default (for inclusion of all necessary environment variables)
+UXTerm*loginshell: true
+
+! I like a LOT of scrollback...
+UXTerm*savelines: 16384
+
+! double-click to select whole URLs :D
+UXTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+URxvt*imLocale: en_US.UTF-8
+URxvt*termName: rxvt-unicode-256color
+Urxvt*buffered: false
+URxvt.intensityStyles: false
+URxvt*font:               xft:Knack Nerd Font:size=11.5
+!URxvt*boldFont:          xft:FuraCode Nerd Font Mono:Bold:size=10
+!URxvt*italicFont:        xft:FuraCode Nerd Font Mono:Regular:size=10
+!URxvt*boldItalicFont:    xft:FuraCode Nerd Font Mono:Regular:size=10
+
+URxvt.saveLines: 2000
+URxvt.scrollBar: false
+URxvt.cursorColor: white
+
+!! Extensions
+URxvt.perl-ext-common: default,matcher,resize-font,url-select,keyboard-select,clipboard
+URxvt.colorUL: #4682B4
+!! url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: urxvt -e lynx -cfg=~/.lynx.cfg -lss=~/.lynx.lss
+URxvt.url-select.underline: true
+!! keyboard-select:
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!! resize-font
+URxvt.resize-font.smaller: C-j
+URxvt.resize-font.bigger:  C-k
+!! Matcher
+URxvt.url-launcher:	urxvt -e lynx -cfg=~/.lynx.cfg -lss=~/.lynx.lss
+URxvt.matcher.button: 1
+!!clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt*depth: 32
+
+! Color settings
+! Transparency
+URxvt.transparent: false
+URxvt.shading: 15
+!URxvt.tintColor: white
+
+! Challenger Deep
+!! special
+!*.foreground:   #cbe3e7
+!*.background:   #1b182c
+!*.cursorColor:  #fbfcfc
+!
+!! black
+!*.color0:       #100e23
+!*.color8:       #565575
+!
+!! red
+!*.color1:       #ff8080
+!*.color9:       #ff5458
+!
+!! green
+!*.color2:       #95ffa4
+!*.color10:      #62d196
+!
+!! yellow
+!*.color3:       #ffe9aa
+!*.color11:      #ffb378
+!
+!! blue
+!*.color4:       #91ddff
+!*.color12:      #65b2ff
+!
+!! magenta
+!*.color5:       #c991e1
+!*.color13:      #906cff
+!
+!! cyan
+!*.color6:       #aaffe4
+!*.color14:      #63f2f1
+
+!! white
+!*.color7:       #cbe3e7
+!*.color15:      #a6b3cc
+
+!Cyberpunk
+!Special
+*.foreground:  #e5e5e5
+*.background:  #332a57
+*.cursorColor: #21f6bc
+!
+!! Black
+!*.color0:      #000000
+!*.color8:      #000000
+!
+!! Red
+!*.color1:      #ff7092
+!*.color9:      #ff8aa4
+!
+!! Green
+!*.color2:      #00fbac
+!*.color10:     #21f6bc
+!!
+!! Yellow
+!*.color3:      #fffa6a
+!*.color11:     #fff787
+!
+!! Blue
+!*.color4:      #00bfff
+!*.color12:     #1bccfd
+!
+!! Magenta
+!*.color5:      #df95ff
+!*.color13:     #e6aefe
+!
+!! Cyan
+!*.color6:      #86cbfe
+!*.color14:     #99d6fc
+!
+!! White
+!*.color7:      #ffffff
+!*.color15:     #ffffff
+
+!Dracula
+!Special
+!*.foreground:  #f8f8f2
+!*.background:  #1e1f29
+!*.cursorColor: #bbbbbb
+!!
+!! Black
+!*.color0:      #000000
+!*.color8:      #555555
+!!
+!! Red
+!*.color1:      #ff5555
+!*.color9:      #ff5555
+!!
+!! Green
+!*.color2:      #50fa7b
+!*.color10:     #50fa7b
+!!
+!! Yellow
+!*.color3:      #f1fa8c
+!*.color11:     #f1fa8c
+!!
+!! Blue
+!*.color4:      #bd93f9
+!*.color12:     #bd93f9
+!!
+!! Magenta
+!*.color5:      #ff79c6
+!*.color13:     #ff79c6
+!!
+!! Cyan
+!*.color6:      #8be9fd
+!*.color14:     #8be9fd
+!!
+!! White
+!*.color7:      #bbbbbb
+!*.color15:     #ffffff
+
+!Grape
+!*.foreground:  #9f9fa1
+!*.background:  #171423
+!*.cursorColor: #a288f7
+!!
+!! Black
+!*.color0:      #2d283f
+!*.color8:      #59516a
+!!
+!! Red
+!*.color1:      #ed2261
+!*.color9:      #f0729a
+!!
+!! Green
+!*.color2:      #1fa91b
+!*.color10:     #53aa5e
+!!
+!! Yellow
+!*.color3:      #8ddc20
+!*.color11:     #b2dc87
+!!
+!! Blue
+!*.color4:      #487df4
+!*.color12:     #a9bcec
+!!
+!! Magenta
+!*.color5:      #8d35c9
+!*.color13:     #ad81c2
+!!
+!! Cyan
+!*.color6:      #3bdeed
+!*.color14:     #9de3eb
+!!
+!! White
+!*.color7:      #9e9ea0
+!*.color15:     #a288f7
+
+!Kolorit
+!*.foreground:  #efecec
+!*.background:  #1d1a1e
+!*.cursorColor: #c7c7c7
+!!
+!! Black
+!*.color0:      #1d1a1e
+!*.color8:      #1d1a1e
+!!
+!! Red
+!*.color1:      #ff5b82
+!*.color9:      #ff5b82
+!!
+!! Green
+!*.color2:      #47d7a1
+!*.color10:     #47d7a1
+!!
+!! Yellow
+!*.color3:      #e8e562
+!*.color11:     #e8e562
+!!
+!! Blue
+!*.color4:      #5db4ee
+!*.color12:     #5db4ee
+!!
+!! Magenta
+!*.color5:      #da6cda
+!*.color13:     #da6cda
+!!
+!! Cyan
+!*.color6:      #57e9eb
+!*.color14:     #57e9eb
+!!
+!! White
+!*.color7:      #ededed
+!*.color15:     #ededed
+
+!Dark Pastel
+!*.foreground:  #ffffff
+!*.background:  #000000
+!*.cursorColor: #bbbbbb
+!!
+!! Black
+!*.color0:      #000000
+!*.color8:      #555555
+!!
+!! Red
+!*.color1:      #ff5555
+!*.color9:      #ff5555
+!!
+!! Green
+!*.color2:      #55ff55
+!*.color10:     #55ff55
+!!
+!! Yellow
+!*.color3:      #ffff55
+!*.color11:     #ffff55
+!!
+!! Blue
+!*.color4:      #5555ff
+!*.color12:     #5555ff
+!!
+!! Magenta
+!*.color5:      #ff55ff
+!*.color13:     #ff55ff
+!!
+!! Cyan
+!*.color6:      #55ffff
+!*.color14:     #55ffff
+!!
+!! White
+!*.color7:      #bbbbbb
+!*.color15:     #ffffff
+
+!Snazzy
+!*.foreground:  #ebece6
+!*.background:  #1e1f29
+!*.cursorColor: #e4e4e4
+!!
+!! Black
+!*.color0:      #000000
+!*.color8:      #555555
+!!
+!! Red
+!*.color1:      #fc4346
+!*.color9:      #fc4346
+!!
+!! Green
+!*.color2:      #50fb7c
+!*.color10:     #50fb7c
+!!
+!! Yellow
+!*.color3:      #f0fb8c
+!*.color11:     #f0fb8c
+!!
+!! Blue
+!*.color4:      #49baff
+!*.color12:     #49baff
+!!
+!! Magenta
+!*.color5:      #fc4cb4
+!*.color13:     #fc4cb4
+!!
+!! Cyan
+!*.color6:      #8be9fe
+!*.color14:     #8be9fe
+!!
+!! White
+!*.color7:      #ededec
+!*.color15:     #ededec
+
+!Toy Chest
+!*.foreground:  #31d07b
+!*.background:  #24364b
+!*.cursorColor: #d5d5d5
+!!
+!! Black
+!*.color0:      #2c3f58
+!*.color8:      #336889
+!!
+!! Red
+!*.color1:      #be2d26
+!*.color9:      #dd5944
+!!
+!! Green
+!*.color2:      #1a9172
+!*.color10:     #31d07b
+!!
+!! Yellow
+!*.color3:      #db8e27
+!*.color11:     #e7d84b
+!!
+!! Blue
+!*.color4:      #325d96
+!*.color12:     #34a6da
+!!
+!! Magenta
+!*.color5:      #8a5edc
+!*.color13:     #ae6bdc
+!!
+!! Cyan
+!*.color6:      #35a08f
+!*.color14:     #42c3ae
+!!
+!! White
+!*.color7:      #23d183
+!*.color15:     #d5d5d5
+
+
+!!Loveless
+!*background:	#1D1F28
+!*foreground:	#FDFDFD
+!*cursorColor:	#C574DD
+!*color0:	    #282A36
+!*color1:	    #F37F97
+!*color2:	    #5ADECD
+!*color3:	    #F2A272
+!*color4:	    #8897F4
+!*color5:	    #C574DD
+!*color6:	    #79E6F3
+!*color7:	    #FDFDFD
+!*color8:	    #414458
+!*color9:	    #FF4971
+!*color10:	    #18E3C8
+!*color11:	    #FF8037
+!*color12:	    #556FFF
+!*color13:	    #B043D1
+!*color14:	    #3FDCEE
+!*color15:	    #BEBEC1
+
+
+!!Skyfall
+!*background:  #282F37
+!*foreground:  #F1FCF9
+!*cursorColor: #F1FCF9
+!*color0:      #20262C
+!*color1:      #DB86BA
+!*color2:      #74DD91
+!*color3:      #E49186
+!*color4:      #75DBE1
+!*color5:      #B4A1DB
+!*color6:      #9EE9EA
+!*color7:      #F1FCF9
+!*color8:      #465463
+!*color9:      #D04E9D
+!*color10:     #4BC66D
+!*color11:     #DB695B
+!*color12:     #3DBAC2
+!*color13:     #825ECE
+!*color14:     #62CDCD
+!*color15:     #E0E5E5
+
+!!Ephemeral
+!*background:  #323F4E
+!*foreground:  #F8F8F2
+!*cursorColor: #F8F8F2
+!*color0:      #3D4C5F
+!*color1:      #F48FB1
+!*color2:      #A1EFD3
+!*color3:      #F1FA8C
+!*color4:      #92B6F4
+!*color5:      #BD99FF
+!*color6:      #87DFEB
+!*color7:      #F8F8F2
+!*color8:      #56687E
+!*color9:      #EE4F84
+!*color10:     #53E2AE
+!*color11:     #F1FF52
+!*color12:     #6498EF
+!*color13:     #985EFF
+!*color14:     #24D1E7
+!*color15:     #E5E5E5
+
+!!Manta
+!*background:  #1E2541
+!*foreground:  #EEFFFF
+!*cursorColor: #EEFFFF
+!*color0:	   #1E2541
+!*color1:	   #F0719B
+!*color2:	   #5AF7B0
+!*color3:	   #FFA56B
+!*color4:	   #57C7FF
+!*color5:	   #C792EA
+!*color6:	   #89DDFF
+!*color7:	   #EEFFFF
+!*color8:	   #354274
+!*color9:	   #F02E6E
+!*color10:	   #2CE592
+!*color11:	   #FF8537
+!*color12:	   #1DA0E2
+!*color13:	   #A742EA
+!*color14:	   #47BAE8
+!*color15:	   #DEE6E7
+!*color16:	   #2A335A
+
+!!ilovecookie
+!*background:	#1D1F28
+!*foreground:	#FDFDFD
+!*cursorColor:	#C574DD
+*color0:	#282A36
+*color1:	#F37F97
+*color2:	#5ADECD
+*color3:	#F2A272
+*color4:	#8897F4
+*color5:	#C574DD
+*color6:	#79E6F3
+*color7:	#FDFDFD
+*color8:	#414458
+*color9:	#FF4971
+*color10:	#18E3C8
+*color11:	#FF8037
+*color12:	#556FFF
+*color13:	#B043D1
+*color14:	#3FDCEE
+*color15:	#BEBEC1
+
+!!Rice in Progress
+!*color0:	#454A54
+!*color1:	#D7424F
+!*color2:	#98c379
+!*color3:	#e5c07b
+!*color4:	#61afef
+!*color5:	#c678dd
+!*color6:	#56b6c2
+!*color7:	#CDCDCD
+!*color8:	#5C6370
+!*color9:	#e06c75
+!*color10:	#B3D39C
+!*color11:	#E9CB93
+!*color12:	#8FC6F4
+!*color13:	#D7A1E7
+!*color14:	#7BC6D0
+!*color15:	#E6E6E6
+
+! Sxiv
+Sxiv.foreground: #C792EA
+Sxiv.background: #1E2541
