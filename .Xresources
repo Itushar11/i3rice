@@ -65,7 +65,7 @@ URxvt*imLocale: en_US.UTF-8
 URxvt*termName: rxvt-unicode-256color
 Urxvt*buffered: false
 URxvt.intensityStyles: false
-URxvt*font:               xft:Knack Nerd Font:size=11.5
+URxvt*font:               xft:FuraCode Nerd Font Mono:size=9.9
 !URxvt*boldFont:          xft:FuraCode Nerd Font Mono:Bold:size=10
 !URxvt*italicFont:        xft:FuraCode Nerd Font Mono:Regular:size=10
 !URxvt*boldItalicFont:    xft:FuraCode Nerd Font Mono:Regular:size=10
