@@ -69,8 +69,8 @@ Urxvt.buffered: false
 URxvt.intensityStyles: false
 
 !! Fonts
-URxvt.font:               xft:FuraCode Nerd Font Mono:size=9.9
-!URxvt.boldFont:          xft:FuraCode Nerd Font Mono:Bold:size=9.9
+URxvt.font:               xft:GoMono Nerd Font Mono:size=9.9
+!URxvt.boldFont:          xft:FuraCode Nerd Font Mono :Bold:size=9.9
 !URxvt.italicFont:        xft:FuraCode Nerd Font Mono:Regular:size=9.9
 !URxvt.boldItalicFont:    xft:FuraCode Nerd Font Mono:Regular:size=9.9
 
