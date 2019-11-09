@@ -37,7 +37,7 @@ cursor=       #0F9DBA
 selection_background=  #fbfcfc
 
 # background transparency (requires a compositor)
-background = rgba(29, 35, 48, 0.8)
+background = rgba(29, 35, 48, 0.85)
 
 # black
 color8=       #100e23
