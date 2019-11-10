@@ -31,7 +31,7 @@ XTerm.vt100.translations: #override \n\
 XTerm*loginshell: true
 
 ! I like a LOT of scrollback...
-XTerm*savelines: 16384
+XTerm*savelines: 25000
 
 ! double-click to select whole URLs :D
 XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
@@ -54,7 +54,7 @@ UXTerm.vt100.translations: #override \n\
 UXTerm*loginshell: true
 
 ! I like a LOT of scrollback...
-UXTerm*savelines: 16384
+UXTerm*savelines: 25000
 
 ! double-click to select whole URLs :D
 UXTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
@@ -74,7 +74,7 @@ URxvt.font:               xft:GoMono Nerd Font Mono:size=9.9
 !URxvt.italicFont:        xft:FuraCode Nerd Font Mono:Regular:size=9.9
 !URxvt.boldItalicFont:    xft:FuraCode Nerd Font Mono:Regular:size=9.9
 
-URxvt.saveLines: 2000
+URxvt.saveLines: 10000
 URxvt.scrollBar: false
 URxvt.cursorColor: white
 
@@ -104,7 +104,9 @@ URxvt.keysym.C-V: perl:clipboard:paste
 
 !! Color settings
 URxvt.depth: 32
-URxvt.shading: 15
+!URxvt.fading: 20
+!URxvt.shading: 10
+!URxvt.blurRadius: 30
 !URxvt.tintColor: white
 
 !! Transparency
